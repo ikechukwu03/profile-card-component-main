@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Figtree:wght@600;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&family=Kumbh+Sans:wght@400;700&family=Outfit:wght@400;800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Figtree:wght@600;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&family=Kumbh+Sans:wght@400;700&family=Outfit:wght@400;800&family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 *{
   padding: 0;
@@ -7,12 +7,9 @@
 
 body{
   box-sizing: border-box;
-  background-color: hsl(185, 75%, 39%);
+  background-color: hsl(185, 75%, 39%); 
   overflow-x: hidden;
-  background-image: url('./images/bg-pattern-top.svg');
-  background-position: -200px;
-  background-repeat: unset;
-  background-position-y: -600px;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content:center;
@@ -26,12 +23,27 @@ body{
   font-family: 'Red Hat Display', sans-serif;
 }
 
+.first-svg{
+  position: absolute;
+  bottom: 20rem; 
+  right: 40rem;
+  background-repeat: no-repeat;
+}
+
+.second-svg{
+  position: absolute;
+  top: 20rem; 
+  left: 40rem;
+  background-repeat: no-repeat;
+}
+
 .container{
   display: flex;
   align-items: center;
   justify-content:center;
   flex-direction: column;
   margin-top: 10rem;
+  z-index: 1;
 }
 
 .card{
@@ -41,7 +53,7 @@ body{
   justify-content: center;
   background-color: white;
   border-radius: 20px;
-  box-shadow: -11px 20px 500px #367C86;
+  box-shadow: -11px 20px 450px #367C86;
 }
 
 img{
@@ -128,9 +140,8 @@ img{
 
 footer{
   margin-top: 1.25rem;
+  z-index: 1;
 }
 footer a{
   text-decoration: none;
 }
-
-
